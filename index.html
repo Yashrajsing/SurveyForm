@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #div1 {
+        background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1:hover {
+        text-decoration: underline;
+        color: rgb(46, 0, 250);
+      }
+
+      #i1:hover {
+        color: rgb(5, 34, 16);
+        text-decoration: overline;
+        opacity: 0.7;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 30px;
+        font-size: xx-large;
+        margin-top: 0;
+        text-decoration: overline;
+        margin-bottom: 0;
+      }
+
+      .d1 {
+        padding-right: 20px;
+        font-size: large;
+        padding-bottom: 20px;
+      }
+
+      .d2 {
+        font-size: large;
+        padding-bottom: 20px;
+      }
+
+      table {
+        background-image: url("https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px 100px 10px 30px;
+        margin: auto;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 20px orange;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <h1>Survey Form</h1>
+      <table>
+        <tr>
+          <td class="d1"><label for="">Name</label></td>
+          <td class="d2">
+            <input
+              type="text"
+              placeholder="enter your name"
+              required
+              minlength="3"
+              pattern="[a-Z]"
+            />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td class="d1"><label for="">Gender</label></td>
+          <td
+            class="d2"
+            style="padding-bottom: 20px; font-size: medium; padding-right: 20px"
+          >
+            <input type="radio" name="gender" />
+            <label>Male</label>
+            <input type="radio" name="gender" />
+            <label>Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="d1"><label for="">Phone Number</label></td>
+          <td class="d2">
+            <input
+              type="text"
+              placeholder="Without +91"
+              required
+              minlength="10"
+              maxlength="10"
+              pattern="[0-9]"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td class="d1"><label for="">E-Mail</label></td>
+          <td class="d2">
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              pattern=".+company.com"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td class="d1"><label for="">Which Movies Do You Like?</label></td>
+          <td
+            class="d2"
+            style="
+              padding-bottom: 20px;
+              font-size: medium;
+              padding-right: 20px;
+              text-align: left;
+            "
+          >
+            <input type="radio" name="movies" />
+            <label>Action</label> <br />
+            <input type="radio" name="movies" />
+            <label>Thriller</label> <br />
+            <input type="radio" name="movies" />
+            <label for="">Sci-Fi</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="d1"><label for="">How Do You Rate Our Site?</label></td>
+          <td class="d2" style="text-align: left">
+            <input type="radio" name="rating" />    
+            <label for="">Excellent</label> <br />
+            <input type="radio" name="rating" />
+            <label for="">Good</label> <br />
+            <input type="radio" name="rating" />
+            <label for="">Satisfactory</label> <br />
+            <input type="radio" name="rating" />
+            <label for="">Fair</label> <br />
+            <input type="radio" name="rating" />
+            <label for="">Poor</label> <br />
+          </td>
+        </tr>
+        <tr>
+          <td class="d1"><label for="">Any Suggestions...</label></td>
+          <td class="d2">
+            <textarea cols="20" rows="4" placeholder="Suggestions"></textarea>
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input
+              id="i1" type="submit"
+              style="padding: 5px 60px; background-color: coral"
+              
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
